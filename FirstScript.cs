@@ -23,6 +23,9 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Start()
     {
+        PlayerModel player = new PlayerModel();
+        player.SayName();
+
         if(type == TYPE.STOP)
         {
             Debug.Log(type);
