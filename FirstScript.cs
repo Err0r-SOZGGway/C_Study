@@ -12,8 +12,22 @@ public class NewBehaviourScript : MonoBehaviour
     bool flag1 = true;
     bool flag2 = false;
 
+    public enum TYPE
+    {
+        STOP,
+        RIGHT,
+        LEFT
+    }
+
+    TYPE type = TYPE.STOP;
+
     void Start()
     {
+        if(type == TYPE.STOP)
+        {
+            Debug.Log(type);
+        }
+
         string say = "Hello world";
         Debug.Log(say);
 
@@ -207,4 +221,5 @@ public class NewBehaviourScript : MonoBehaviour
         return maxValue;
         */
     }
+
 }
