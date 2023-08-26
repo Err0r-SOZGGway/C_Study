@@ -25,8 +25,11 @@ public class NewBehaviourScript : MonoBehaviour
     {
         PlayerModel player = new PlayerModel();
         player.SayName();
+        player.Hp = 1000;
+        // プロパティにアクセス
+        Debug.Log(player.Hp);
 
-        if(type == TYPE.STOP)
+        if (type == TYPE.STOP)
         {
             Debug.Log(type);
         }

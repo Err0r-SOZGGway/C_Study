@@ -6,6 +6,13 @@ public class PlayerModel
   int hp;
   int at;
 
+  // プロパティ
+  public int Hp
+  {
+    get { return hp; }
+    set { hp = value; }
+  }
+
   public PlayerModel()
   {
     name = "hero";
